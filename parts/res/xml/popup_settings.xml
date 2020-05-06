@@ -3,6 +3,7 @@
 
     <SwitchPreference
         android:defaultValue="true"
+        android:icon="@drawable/ic_popup_light"
         android:key="popup_led_effect"
         android:summary="@string/popup_led_effect_summary"
         android:title="@string/popup_led_effect_title" />
@@ -19,6 +20,7 @@
         android:defaultValue="0"
         android:entries="@array/popup_sound_effect_entries"
         android:entryValues="@array/popup_sound_effect_values"
+        android:icon="@drawable/ic_popup_sound"
         android:key="popup_sound_effect"
         android:summary="%s"
         android:title="@string/popup_sound_effect_title" />

@@ -28,4 +28,7 @@
 
     <!--  Allow CornerHandleView and PathSpecCornerPathRenderer to decouple from corner-radius -->
     <dimen name="config_rounded_mask_size">122px</dimen>
+
+    <!-- Color of the FOD view -->
+    <color name="config_fodColor">#ffffff</color>
 </resources>

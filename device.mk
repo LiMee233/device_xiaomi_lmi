@@ -38,6 +38,10 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 TARGET_HAS_FOD := true
 
+# Remove prebuilt camera
+PRODUCT_PACKAGES += \
+    OverridePackages
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.barometer.xml

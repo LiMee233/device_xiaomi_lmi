@@ -13,11 +13,11 @@ static const variant_info_t lmi_info = {
     .hwc_value = "",
     .sku_value = "std",
 
-    .brand = "POCO",
+    .brand = "Redmi",
     .device = "lmi",
     .marketname = "",
-    .model = "POCO F2 Pro",
-    .build_fingerprint = "POCO/lmi_global/lmi:11/RKQ1.200826.002/V12.5.2.0.RJKMIXM:user/release-keys",
+    .model = "Redmi K30 Pro",
+    .build_fingerprint = "Redmi/lmi/lmi:11/RKQ1.200826.002/V12.5.2.0.RJKMIXM:user/release-keys",
 
     .nfc = true,
 };

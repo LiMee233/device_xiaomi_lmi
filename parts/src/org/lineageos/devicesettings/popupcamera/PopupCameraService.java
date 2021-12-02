@@ -130,7 +130,7 @@ public class PopupCameraService extends Service implements Handler.Callback {
                     .build())
             .build();
     String[] soundNames =
-        getResources().getStringArray(R.array.popupcamera_effects_names);
+        getResources().getStringArray(R.array.popup_sound_effect_names);
     mSounds = new int[soundNames.length];
     for (int i = 0; i < soundNames.length; i++) {
       mSounds[i] =
@@ -266,12 +266,23 @@ public class PopupCameraService extends Service implements Handler.Callback {
 
   private void lightUp() {
     if (mPopupCameraPreferences.isLedAllowed()) {
-      FileUtils.writeLine(Constants.RED_LED_PATH, "1");
-      FileUtils.writeLine(Constants.GREEN_LED_PATH, "1");
-      FileUtils.writeLine(Constants.BLUE_LED_PATH, "1");
-      FileUtils.writeLine(Constants.RED_RIGHT_LED_PATH, "1");
-      FileUtils.writeLine(Constants.GREEN_RIGHT_LED_PATH, "1");
-      FileUtils.writeLine(Constants.BLUE_RIGHT_LED_PATH, "1");
+      int ledColor =
+        Integer.parseInt(mPopupCameraPreferences.getLEDColor());
+      if(ledColor >= 4)
+      {
+        FileUtils.writeLine(Constants.RED_LED_PATH, "1");
+        FileUtils.writeLine(Constants.RED_RIGHT_LED_PATH, "1");
+      }
+      if((ledColor == 2) || (ledColor == 3) || (ledColor >=6))
+      {
+        FileUtils.writeLine(Constants.GREEN_LED_PATH, "1");
+        FileUtils.writeLine(Constants.GREEN_RIGHT_LED_PATH, "1");
+      }
+      if((ledColor & 1) == 1)
+      {
+        FileUtils.writeLine(Constants.BLUE_LED_PATH, "1");
+        FileUtils.writeLine(Constants.BLUE_RIGHT_LED_PATH, "1");
+      }
 
       mHandler.postDelayed(() -> {
         FileUtils.writeLine(Constants.RED_LED_PATH, "0");

@@ -18,4 +18,13 @@
 <resources>
     <!-- Height of the status bar header bar when on Keyguard -->
     <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height</dimen>
+
+    <!-- the padding on the start of the statusbar -->
+    <dimen name="status_bar_padding_start">4dp</dimen>
+
+    <!-- the padding on the end of the statusbar -->
+    <dimen name="status_bar_padding_end">4dp</dimen>
+
+    <!-- The absolute side margins of quick settings -->
+    <dimen name="rounded_corner_content_padding">24dp</dimen>
 </resources>

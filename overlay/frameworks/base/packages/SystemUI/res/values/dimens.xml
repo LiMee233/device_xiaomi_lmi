@@ -26,5 +26,5 @@
     <dimen name="status_bar_padding_end">4dp</dimen>
 
     <!-- The absolute side margins of quick settings -->
-    <dimen name="rounded_corner_content_padding">24dp</dimen>
+    <dimen name="rounded_corner_content_padding">20dp</dimen>
 </resources>

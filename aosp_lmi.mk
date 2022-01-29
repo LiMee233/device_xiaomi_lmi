@@ -19,7 +19,7 @@ $(call inherit-product, device/xiaomi/lmi/device.mk)
 PRODUCT_NAME := aosp_lmi
 PRODUCT_DEVICE := lmi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_BRAND := POCO
-PRODUCT_MODEL := POCO F2 Pro
+PRODUCT_BRAND := Redmi
+PRODUCT_MODEL := Redmi K30 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

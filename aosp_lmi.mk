@@ -23,3 +23,6 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi K30 Pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+# Recovery
+TARGET_USES_AOSP_RECOVERY := true

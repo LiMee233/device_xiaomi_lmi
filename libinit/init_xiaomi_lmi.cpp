@@ -9,7 +9,7 @@
 
 #include "vendor_init.h"
 
-static const variant_info_t lmi_info = {
+static const variant_info_t lmi_global_info = {
     .hwc_value = "",
     .sku_value = "std",
 
@@ -33,22 +33,22 @@ static const variant_info_t lmipro_info = {
     .nfc = true,
 };
 
-static const variant_info_t lmi_global_info = {
+static const variant_info_t lmi_info = {
     .hwc_value = "",
     .sku_value = "",
 
-    .brand = "POCO",
+    .brand = "Redmi",
     .device = "lmi",
     .marketname = "",
-    .model = "POCO F2 Pro",
+    .model = "Redmi K30 Pro",
 
     .nfc = true,
 };
 
 static const std::vector<variant_info_t> variants = {
-    lmi_info,
-    lmipro_info,
     lmi_global_info,
+    lmipro_info,
+    lmi_info,
 };
 
 void vendor_load_properties() {

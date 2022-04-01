@@ -27,4 +27,7 @@
 
     <!-- Margin on the left side of the carrier text on Keyguard -->
     <dimen name="keyguard_carrier_text_margin">22dp</dimen>
+
+    <!-- With the large clock, move up slightly from the center -->
+    <dimen name="keyguard_large_clock_top_margin">-152dp</dimen>
 </resources>

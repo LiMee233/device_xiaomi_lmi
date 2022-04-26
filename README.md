@@ -28,15 +28,15 @@ The Redmi K30 Pro / POCO F2 Pro (codenamed "lmi") is a flagship smartphone from 
 
 ## Build guide
 
-1. Fllow the [manifest](https://github.com/PixelExperience/manifest) of Pixel Experience to sync.
-2. Clone [device_xiaomi_lmi](https://github.com/LiMee233/device_xiaomi_lmi) into `device/xiaomi/lmi`.
-3. Clone [device_xiaomi_sm8250-common](https://github.com/LiMee233/device_xiaomi_sm8250-common) into `device/xiaomi/sm8250-common`.
-4. Clone [kernel_xiaomi_sm8250](https://github.com/LiMee233/kernel_xiaomi_sm8250) into `kernel/xiaomi/sm8250`.
-5. Clone [vendor_xiaomi_sm8250-common](https://github.com/LiMee233/vendor_xiaomi_sm8250-common) into `vendor/xiaomi/sm8250-common`.
+1. Fllow the [manifest](https://github.com/PixelExperience/manifest/tree/twelve) of Pixel Experience to sync.
+2. Clone [device_xiaomi_lmi](https://github.com/LiMee233/device_xiaomi_lmi/tree/twelve) into `device/xiaomi/lmi`.
+3. Clone [device_xiaomi_sm8250-common](https://github.com/LiMee233/device_xiaomi_sm8250-common/tree/twelve-lmi) into `device/xiaomi/sm8250-common`.
+8. Clone [device_xiaomi_sm8250-extras](https://github.com/PixelExperience-Devices/device_xiaomi_sm8250-extras/tree/twelve) into `device/xiaomi/sm8250-extras`.
+4. Clone [kernel_xiaomi_sm8250](https://github.com/LiMee233/kernel_xiaomi_sm8250/tree/twelve-lmi) into `kernel/xiaomi/sm8250`.
+5. Clone [vendor_xiaomi_sm8250-common](https://github.com/LiMee233/vendor_xiaomi_sm8250-common/tree/twelve-lmi) into `vendor/xiaomi/sm8250-common`.
 6. Clone [vendor_xiaomi_lmi](https://gitlab.com/the-muppets/proprietary_vendor_xiaomi/-/tree/lineage-19.1/lmi) into `vendor/xiaomi/lmi`.
-7. Clone [hardware_xiaomi](https://github.com/PixelExperience/hardware_xiaomi) into `hardware/xiaomi`.
-8. Clone [device_xiaomi_sm8250-extras](https://github.com/PixelExperience-Devices/device_xiaomi_sm8250-extras.git) into `device/xiaomi/sm8250-extras`.
-9. Fllow the [manifest](https://github.com/PixelExperience/manifest) of Pixel Experience to build.
+7. Clone [hardware_xiaomi](https://github.com/PixelExperience/hardware_xiaomi/tree/twelve) into `hardware/xiaomi`.
+9. Fllow the [manifest](https://github.com/PixelExperience/manifest/tree/twelve) of Pixel Experience to build.
 
 ## Modify upstream source code
 
